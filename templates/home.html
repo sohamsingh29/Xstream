@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+{% block title %}
+MOVIES
+{%endblock%}
+{% block main %}
+
+{%for movie in data%}
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front" style="background: url(./img/img1.jpg);">
+            <!-- <img src={{data.img}}/> -->
+        </div>
+        <div class="flip-card-back">
+
+            <a href="#" class="button">Link Button</a>
+
+        </div>
+    </div>
+</div>
+{%endfor%}
+
+{% endblock %}
